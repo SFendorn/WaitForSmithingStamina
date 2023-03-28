@@ -33,7 +33,7 @@ namespace WaitForSmithingStamina
 
         protected void AddGameMenus(CampaignGameStarter campaignGameStarter)
         {
-            campaignGameStarter.AddGameMenuOption("town", "town_do_wait_smithing", "Wait to regain smithy stamina.", new GameMenuOption.OnConditionDelegate(GameMenuWaitForSmithingStaminaCondition), x => GameMenu.SwitchToMenu("town_wait_smithing"), index: 11);
+            campaignGameStarter.AddGameMenuOption("town", "town_do_wait_smithing", "Wait to regain smithing stamina.", new GameMenuOption.OnConditionDelegate(GameMenuWaitForSmithingStaminaCondition), x => GameMenu.SwitchToMenu("town_wait_smithing"), index: 11);
             campaignGameStarter.AddWaitGameMenu("town_wait_smithing", "{=ydbVysqv}You are waiting to regain your stamina in {CURRENT_SETTLEMENT}.", new OnInitDelegate(GameMenuSettlementWaitOnInit), new OnConditionDelegate(GameMenuTownWaitOnCondition), new OnConsequenceDelegate(GameMenuTownWaitOnConsequence), new OnTickDelegate(GameMenuTownWaitMenuOnTick), GameMenu.MenuAndOptionType.WaitMenuShowOnlyProgressOption, GameOverlays.MenuOverlayType.SettlementWithBoth, targetWaitHours: waitProgressHours);
             campaignGameStarter.AddGameMenuOption("town_wait_smithing", "wait_leave", "{=UqDNAZqM}Stop waiting", new GameMenuOption.OnConditionDelegate(BackOnCondition), args =>
             {
