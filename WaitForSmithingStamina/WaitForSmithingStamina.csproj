@@ -217,10 +217,6 @@
       <HintPath>..\..\..\bin\Win64_Shipping_Client\TaleWorlds.SaveSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="TaleWorlds.Starter.DotNetCore">
-      <HintPath>..\..\..\bin\Win64_Shipping_Client\TaleWorlds.Starter.DotNetCore.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="TaleWorlds.Starter.Library">
       <HintPath>..\..\..\bin\Win64_Shipping_Client\TaleWorlds.Starter.Library.dll</HintPath>
       <Private>False</Private>
